@@ -4,6 +4,8 @@ local config = {}
 
 config.font = wezterm.font("JetBrains Mono")
 config.color_scheme = "Tokyo Night"
+config.font_size = 16
+config.enable_tab_bar = false
 
 config.keys = {
 	-- paste from the clipboard
