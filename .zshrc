@@ -16,7 +16,8 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias ls="eza --icons=always"
 
 # -- Bat (better cat) --
-alias cat="bat"
+alias cat="bat" # MacOS
+alias cat="batcat" # Linux
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
