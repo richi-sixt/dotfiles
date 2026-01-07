@@ -16,7 +16,8 @@ alias cat="batcat" # Linux
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-# export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+ 
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 # export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig:/usr/local/opt/harfbuzz/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # Version Manager for node.js
