@@ -28,3 +28,5 @@ export NVM_DIR="$HOME/.nvm"
 # Created by `pipx` on 2025-12-29 18:08:37
 export PATH="$PATH:$HOME/.local/bin"
 eval "$(starship init zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

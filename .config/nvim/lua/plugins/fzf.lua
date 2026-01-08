@@ -1,12 +1,5 @@
+-- I don't actually use fzf in neovim anymore,
+-- but I do regularly use it from the command line and this installs it for me haha
 return {
-  "ibhagwan/fzf-lua",
-  -- optional for icon support
-  dependencies = { "nvim-tree/nvim-web-devicons" },
-  -- or if using mini.icons/mini.nvim
-  -- dependencies = { "nvim-mini/mini.icons" },
-  ---@module "fzf-lua"
-  ---@type fzf-lua.Config|{}
-  ---@diagnostic disable: missing-fields
-  opts = {},
-  ---@diagnostic enable: missing-fields
+  { "junegunn/fzf", build = "./install --all" },
 }
