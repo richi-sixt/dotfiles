@@ -13,7 +13,8 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	end
 end
 vim.opt.rtp:prepend(lazypath)
-
+-- Start nvim wit neovim env fort jupyter
+vim.g.python3_host_prog = vim.fn.expand("~/.virtualenvs/neovim/bin/python3")
 require("lazy").setup({
 	spec = {
 		-- add LazyVim and import its plugins
