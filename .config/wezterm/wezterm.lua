@@ -15,12 +15,12 @@ config.keys = {
 	{ key = "V", mods = "CTRL", action = act.PasteFrom("PrimarySelection") },
 	{
 		key = '"',
-		mods = "CTRL|SHIFT",
+		mods = "CTRL|SHIFT|ALT",
 		action = wezterm.action.SplitVertical({}),
 	},
 	{
 		key = "%",
-		mods = "CTRL|SHIFT",
+		mods = "CTRL|SHIFT|ALT",
 		action = wezterm.action.SplitHorizontal({}),
 	},
 }
