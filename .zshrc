@@ -12,8 +12,6 @@ alias ls="eza --icons=always"
 # -- Bat (better cat) --
 alias cat="bat" # MacOS
 alias cat="batcat" # Linux
-alias pip="pip3.14"
-alias python="python3.14"
 
 # User configuration
 
