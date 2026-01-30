@@ -14,11 +14,8 @@ alias cat="bat" # MacOS
 alias cat="batcat" # Linux
 
 # User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
  
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
-# export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig:/usr/local/opt/harfbuzz/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # Version Manager for node.js
 export NVM_DIR="$HOME/.nvm"
@@ -69,4 +66,13 @@ rmvenv() {
     else
       rm -r $VENV_HOME/$1
   fi
+}
+
+# yazi change cwd
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
 }
