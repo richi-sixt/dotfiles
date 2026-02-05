@@ -28,6 +28,11 @@ eval "$(starship init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Load local environment variables
+if [ -f ~/.zshrc.local ]; then
+    source ~/.zshrc.local
+fi
+
 # venv_wrapper 
 # $ mkvenv myvirtualenv # creates venv under ~/.virtualenvs/
 # $ venv myvirtualenv   # activates venv
